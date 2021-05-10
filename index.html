@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>MONTHLY EXPENDITURE</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="page1" class="block">
+        <form>
+            <label>ENTER THE YEAR</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input class="inp" type="text" id="yr">
+            <br>
+            <br>
+            <label>ENTER THE MONTH</label>&nbsp;
+            <input class="inp" type="text" id="mon">
+            <br>
+            <br>
+            <label>ENTER THE BUDGET</label>
+            <input class="inp" type="text" id="totals">
+        </form>
+        <button class="inp" id="btn1" onclick="func()">SUBMIT</button>
+        <p class="pclass">** USE CAPITAL LETTERS</p>    
+    </div>
+    <div id="page2" style="display: none;">
+        <div class="block2">
+            <form>
+                <label>ENTER THE DATE</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inp" type="text" id="dat">
+                <br>
+                <br>
+                <label>ENTER EXPENSE TITLE</label>
+                <input class="inp" type="text" id="tit">
+                <br>
+                <br>
+                <label>ENTER THE EXPENSE</label>&nbsp;&nbsp;
+                <input class="inp" type="text" id="exp">
+            </form>
+            <button class="inp" onclick="record()">SUBMIT</button>
+        </div>
+        <button class="btnend" onclick="endfunc()">END</button>
+        <label class="l1" id="bdg"></label>
+        <label class="l2" id="bal"></label>    
+            <div class="date">
+                <h1>DATE</h1>
+                <p id="slide1"></p>
+            </div>
+            <div class="expenseti">
+                <h1>TITLE</h1>
+                <p id="slide2"></p>
+            </div>
+            <div class="expenses">
+                <h1>EXPENSE</h1>
+                <p id="slide3"></p>
+            </div>
+        
+            <div class="toshow" id="showit" style="display: none;"></div>
+            <p id="pe"></p>
+    </div>
+    <div id="page3" style="display: none;">
+        <div class="block2">
+            <form>
+                <label>ENTER THE DATE</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="inp" type="text" id="edat">
+                <br>
+                <br>
+                <label>ENTER EXPENSE TITLE</label>
+                <input class="inp" type="text" id="etit">
+                <br>
+                <br>
+                <label>ENTER THE EXPENSE</label>&nbsp;&nbsp;
+                <input class="inp" type="text" id="eexp">
+            </form>
+            <button class="inp" id="ebtn">SUBMIT</button>
+        </div>
+    </div>
+        <script src="js/app.js"> </script>
+    </body>
+</html>
